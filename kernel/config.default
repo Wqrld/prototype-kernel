@@ -24,7 +24,7 @@ CONFIG_SLAB_TESTS=m
 # If developing on SLAB BULK API then enable modules using this API by
 # setting CONFIG_SLAB_BULK_API=m
 #
-CONFIG_SLAB_BULK_API=n
+CONFIG_SLAB_BULK_API=m
 
 # Testing some of MST's skb_array code
 # (Compile issues on newer kernels)
@@ -32,3 +32,6 @@ CONFIG_SLAB_BULK_API=n
 
 # Testing experimental page allocator bulking my Mel Gorman
 CONFIG_PAGE_BULK_API=n
+
+# New benchmarking modules for testing page_pool
+CONFIG_BENCH_PAGE_POOL=m
